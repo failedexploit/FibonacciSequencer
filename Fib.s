@@ -29,7 +29,7 @@ getInput:
     sub rsp, 8         ; stack alignment
     mov rdi, inFormat  ; set 1st parameter (inFormat)
     mov rsi, userInput ; set 2nd parameter (userInput)
-    call scanf
+    call scanf         ; scanf(inFormat, userInput)
     add rsp, 8         ; stack alignment
     ret
 
